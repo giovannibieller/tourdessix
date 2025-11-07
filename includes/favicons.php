@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="<?php echo $tmpDir;?>/dist/ico/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $tmpDir;?>/dist/ico/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="TD6" />
-<link rel="manifest" href="<?php echo $tmpDir;?>/dist/ico/site.webmanifest" />
+<link rel="manifest" href="<?php echo $tmpDir;?>/site.webmanifest" />
 
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="<?php echo $seo_theme_color; ?>">

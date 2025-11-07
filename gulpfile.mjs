@@ -100,6 +100,10 @@ function copyIco() {
 	return src([paths.ico + '/**/*.*']).pipe(dest(paths.dist + '/ico'));
 }
 
+function copyManifest() {
+	return src([paths.root + 'site.webmanifest']).pipe(dest(paths.dist));
+}
+
 function copyFonts() {
 	return src([paths.fonts + '/**/*.*']).pipe(dest(paths.dist + '/fonts'));
 }
@@ -128,6 +132,7 @@ const build = series(
 	clean,
 	copyImages,
 	copyIco,
+	copyManifest,
 	parallel(sassCompiler, editorStylesCompiler, jsCompiler)
 );
 const watch = parallel(watchFiles);
