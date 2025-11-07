@@ -1,0 +1,67 @@
+@use './variables' as *;
+@use './colors' as *;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+$font_family_basic: 'Roboto', sans-serif;
+$font_family_accent: 'Roboto Slab', serif;
+
+$font_weight_light: 300;
+$font_weight_regular: 400;
+$font_weight_bold: 700;
+
+$font_h1: 32px;
+$font_h2: 25px;
+$font_h3: 20px;
+$font_h4: 18px;
+
+$font_basic: 16px;
+$font_s: 14px;
+$font_xs: 12px;
+$font_xxs: 10px;
+
+a {
+	color: $accent;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font_family_accent;
+	font-weight: $font_weight_bold;
+}
+
+h1 {
+	font-size: $font_h1;
+}
+h2 {
+	font-size: $font_h2;
+}
+h3 {
+	font-size: $font_h3;
+}
+h4 {
+	font-size: $font_h4;
+}
+
+strong,
+b {
+	font-weight: $font_weight_bold;
+}
+
+p {
+	margin: $p_margin;
+}

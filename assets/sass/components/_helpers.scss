@@ -1,0 +1,69 @@
+@use './mixins' as *;
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: ' ';
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+.txt_center {
+	text-align: center;
+}
+
+.txt_right {
+	text-align: right;
+}
+
+.txt_justify {
+	text-align: justify;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+*:focus {
+	outline: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.pull_right {
+	float: right;
+}
+
+.pull_left {
+	float: left;
+}
+
+.only_mobile {
+	display: none;
+	@include media-query('sm') {
+		display: block;
+	}
+}
+
+.only_tablet_mobile {
+	display: none;
+	@include media-query('md:port') {
+		display: block;
+	}
+}
+
+.only_desktop {
+	@include media-query('md:port') {
+		display: none;
+	}
+}

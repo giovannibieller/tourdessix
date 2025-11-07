@@ -1,0 +1,15 @@
+$breakpoints: (
+	'xs' 'screen and (max-width: 350px)',
+	'sm' 'screen and (max-width: 640px)',
+	'md:port' 'screen and (max-width: 960px)',
+	'md' 'screen and (max-width: 1024px)',
+	'md:min' 'screen and (min-width: 1024px)',
+	'lg' 'screen and (max-width: 1270px)',
+	'lg:plus' 'screen and (max-width: 1350px)'
+);
+
+$max_content_width: 1140px;
+
+$p_margin: 0 0 20px 0;
+
+$line_height: 1.4;

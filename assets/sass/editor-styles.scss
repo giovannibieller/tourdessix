@@ -1,0 +1,15 @@
+/* Editor Styles */
+@use './components/variables' as *;
+@use './components/colors' as *;
+@use './components/typo' as *;
+@use './components/common' as *;
+
+.editor-styles-wrapper {
+	// Add styles that match your front-end design
+	font-family: inherit;
+
+	// Block editor specific styles
+	.wp-block {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,43 @@
+@use './variables' as *;
+@use './colors' as *;
+@use './typo' as *;
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: $basic;
+	font-size: $font_basic;
+	line-height: $line_height;
+	font-family: $font_family_basic;
+	font-weight: $font_weight_regular;
+}
+
+img {
+	max-width: 100%;
+}
+
+// img editor alignment
+img.alignleft {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+img.alignright {
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+img.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+// container
+.main_container_int {
+	width: 100%;
+	max-width: $max_content_width;
+	margin: 0 auto;
+}

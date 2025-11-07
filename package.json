@@ -1,0 +1,44 @@
+{
+	"name": "tour-des-six",
+	"version": "1.0.0",
+	"description": "Tour des Six",
+	"main": "index.php",
+	"repository": "https://github.com/giovannibieller/inito-wp",
+	"type": "module",
+	"scripts": {
+		"init": "./scripts/init.sh",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "./scripts/start-docker.sh && source $HOME/.nvm/nvm.sh; nvm use && wp-env start && gulp watch",
+		"startGulp": "source $HOME/.nvm/nvm.sh; nvm use && gulp watch",
+		"stop": "wp-env stop",
+		"build": "source $HOME/.nvm/nvm.sh; nvm use && gulp build",
+		"prepare": "husky",
+		"commitlint": "commitlint --edit",
+		"commitlint:check": "commitlint --from=HEAD~1 --to=HEAD --verbose"
+	},
+	"author": "",
+	"license": "ISC",
+	"engines": {
+		"node": ">=20.0.0",
+		"npm": ">=10.0.0"
+	},
+	"themeName": "Tour des Six",
+	"devDependencies": {
+		"@babel/core": "^7.28.4",
+		"@babel/preset-env": "^7.28.3",
+		"@babel/register": "^7.28.3",
+		"@commitlint/cli": "^20.1.0",
+		"@commitlint/config-conventional": "^20.0.0",
+		"del": "^8.0.0",
+		"gulp": "^5.0.1",
+		"gulp-babel": "^8.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-notify": "^5.0.0",
+		"gulp-sass": "^6.0.1",
+		"gulp-uglify": "^3.0.2",
+		"husky": "^9.1.7",
+		"sass": "^1.92.1",
+		"webpack": "^5.101.3",
+		"webpack-stream": "^7.0.0"
+	}
+}

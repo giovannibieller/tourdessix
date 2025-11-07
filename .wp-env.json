@@ -1,0 +1,6 @@
+{
+	"themes": ["."],
+	"mappings": {
+		"php.ini": "./php.ini"
+	}
+}
